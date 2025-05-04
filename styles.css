@@ -1,0 +1,132 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+html {
+  font-size: 62.5%;
+}
+:root {
+  /* dark shades of primary color*/
+  /* --clr-primary-1: hsl(205, 86%, 17%); */
+
+  /* primary/main color */
+  --clr-primary-1: hsl(26, 100%, 55%);
+  --clr-primary-2: hsl(25, 100%, 94%);
+
+  /* grey used for paragraphs */
+  --clr-primary-3: hsl(220, 13%, 13%);
+  --clr-primary-4: hsl(219, 9%, 45%);
+  --clr-primary-5: hsl(220, 14%, 75%);
+  --clr-primary-6: hsl(223, 64%, 98%);
+  --clr-primary-7: hsl(220, 14%, 75%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  
+  --ff-primary: "Kumbh Sans", sans-serif;
+  --ff-secondary: 
+
+  --transition: all 0.3s linear;
+  --spacing: 
+  --radius: 
+  --light-shadow: 
+  --dark-shadow:  
+  --max-width: 
+  --fixed-width: 
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-primary);
+  background: ;
+  color: ;
+  line-height: 1.5;
+  font-size: 16px;
+}
+ul {
+  list-style-type: ;
+}
+a {
+  text-decoration: ;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: ;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+/*  global classes */
+
+
+/* icons */
+
+/* avatar */
+.avatar-img{
+width: 3rem;
+}
+@media screen and (min-width:800px){
+  .avatar-img{
+    width: 6rem;
+    }
+}
