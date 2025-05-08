@@ -132,3 +132,46 @@ function reset(){
 
 
 })
+
+
+
+/////////adding to cart
+
+const itemCount= document.querySelector(".item-num");
+const itemMinus= document.querySelector(".minus");
+const itemPlus= document.querySelector(".plus");
+const empty= document.querySelector(".cart-items p");
+const addBtn= document.querySelector(".main-button");
+const itemNum= document.querySelector("#item-num");
+const totalPrice= document.querySelector("#total-price");
+const cartItems= document.querySelector(".cart-items")
+
+
+itemPlus.addEventListener("click",()=>{
+  itemCount.innerHTML=Number(itemCount.innerHTML)+1
+})
+
+itemMinus.addEventListener("click",()=>{
+  if(Number(itemCount.innerHTML)>0){itemCount.innerHTML=Number(itemCount.innerHTML)-1}
+})
+
+addBtn.addEventListener("click",()=>{
+  if(Number(itemCount.innerHTML)>0){
+    empty.remove();
+    const itemnum= Number(itemNum.innerHTML);
+    const totalprice= Math.floor(itemnum*125.00);
+    cartItem(itemnum, totalprice)
+  }
+})
+
+function cartItem(itemNum,totalPrice){
+  const newItem=`<div class="Item">
+  <div class="item-img"><img src="image-product-1-thumbnail.jpg" alt=""></div>
+  <div class="item-descrition">
+    <p>Fall Limited Edition Sneakers</p>
+    <p>$125.00 x <span id="item-num">${itemNum}</span> <span id="${totalPrice}">10000</span></p>
+  </div>
+  </div>`
+
+  cartItems.insertAdjacentHTML("beforeend", newItem);
+}
