@@ -361,3 +361,143 @@ display: none;}
     right: 5rem;
     }
 }
+
+/* slider */
+
+
+/* .slider-container{
+  position: relative;
+  width: 100vw;
+  height: fit-content;
+  overflow: hidden;
+  align-items: center;
+}
+.slider-button{
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  cursor: pointer;
+}
+#prevBtn{
+  left: 2rem
+}
+#nextBtn{
+  right: 2rem;
+}
+.slides{
+  width: 500%;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  position: relative;
+}
+
+.slide{
+  width: 20%;
+  height: auto;
+  object-fit: contain;
+  place-items: center;
+  float: left;
+  transition: var(--transition)
+}
+
+#nextBtn:checked ~ .slides{transform: translateX(-20%);}
+
+@media screen and (min-width:800px){
+  .slider-container{
+    width: 50vw;
+  }
+  .slides{transform: translateX(0);}
+}
+
+ */
+ .slider-container{
+  position: relative;
+  width: 100vw;
+  height: fit-content;
+  overflow: hidden;
+  align-items: center;
+
+}
+ .slides{
+  display: flex;
+  flex-direction: row;
+  width: 500%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.slider{
+  width: 100vw;
+  overflow: hidden;
+
+}
+.slides img{
+  width: 20%;
+}
+.slider-button{
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  cursor: pointer;
+}
+#prevbtn{
+  left: 0rem
+}
+#nextbtn{
+right: 2rem;
+}
+
+.pic-container-pc{display: none;}
+
+
+/* img-grid-pc */
+
+
+@media screen and (min-width:800px){
+  .pic-container-pc{display: block}
+  .slider-container{display: none;}
+}
+
+.pic-container-pc{
+  width: 40vw;
+  height: fit-content;
+  height: auto;
+}
+
+.big{
+    width: 100%;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.big img{
+  width: 100%;
+  border-radius: 10px;
+}
+.big img{display: none;}
+
+.big img.active{display: block;}
+
+.thumbnail{
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+.thumbnail img{
+  width: 7vw;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.thumbnail img:hover{
+  transition: opacity 0.3s ease-in-out;
+  opacity: 50%;
+}
+.thumbnail img:active{
+  border: 2px solid var(--clr-primary-1);
+  opacity: 0.6;
+}

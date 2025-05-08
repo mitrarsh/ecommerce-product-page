@@ -1,0 +1,40 @@
+.pic-container-pc{
+  width: 40rem;
+  height: auto;
+}
+
+.big{
+    width: 40rem;
+  height: 40rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.big img{
+  width: 100%;
+  border-radius: 10px;
+}
+.big img{display: none;}
+
+.big img.active{display: block;}
+
+.thumbnail{
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+.thumbnail img{
+  width: 8rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.thumbnail img:hover{
+  transition: opacity 0.3s ease-in-out;
+  opacity: 50%;
+}
+.thumbnail img:active{
+  border: 2px solid var(--clr-primary-1);
+  opacity: 0.6;
+
+}
