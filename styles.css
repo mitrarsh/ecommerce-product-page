@@ -372,6 +372,8 @@ justify-self: center;}
 
 .Item{
   margin: 2rem;
+  width: 100%;
+  justify-content: space-around;
   display: flex;
   flex-direction: row;
   gap: 2rem;
@@ -409,6 +411,7 @@ cursor: pointer;}
     .Item{
       margin: 2rem;
       width: 100%;
+      justify-content: start;
     }
     .item-img img{
       width: 5rem;
