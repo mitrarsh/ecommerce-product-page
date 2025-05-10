@@ -294,7 +294,7 @@ display: none;}
   transition: var(--transition)
 }
 .side-bar.active{
-  transform:translateX(0) ;
+  transform:translateX(0) ; z-index: 5;
 }
 .overlay{
   position: fixed;
@@ -302,7 +302,7 @@ display: none;}
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 4;
   background-color: rgba(0, 0, 0, 0.7);
   display: none;
 
@@ -338,7 +338,7 @@ display: none;}
   .menu-links-pc a:hover{
     color: var(--clr-primary-3);
   }
-  .side-bar{display: none;}
+  .side-bar{display: none; z-index: 3;}
   .overlay{{display: none;}
 }}
 
@@ -355,7 +355,7 @@ display: none;}
   padding: 1rem 2rem;
   right: -150%;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   display: none;
 }
 .head{border-bottom: 3px solid var(--clr-primary-6);padding: 1rem; font-weight: 700;}
